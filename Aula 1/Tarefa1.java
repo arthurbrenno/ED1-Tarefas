@@ -7,9 +7,8 @@ public class Tarefa1 {
         final int tamanho = vetor.length - 1; // compiladores gostam de valores em cache
 
         int i = 0;
-        while (Character.toLowerCase(vetor[i + 1]) > Character.toLowerCase(vetor[i])
-                && i++ < tamanho - 1)
-            ;
+        while (Character.toLowerCase(vetor[i + 1]) > Character.toLowerCase(vetor[i]) && i++ < tamanho - 1);
+        
         if (i == tamanho)
             return 0;
         return 1;
